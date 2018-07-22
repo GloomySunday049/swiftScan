@@ -469,5 +469,17 @@ open class LBXScanView: UIView
             
         }
     }
+    
+    public func showAnimation() {
+        scanLineAnimation?.isHidden = false
+        scanNetAnimation?.isHidden = false
+        startScanAnimation()
+    }
+    
+    public func hideAnimation() {
+        scanLineAnimation?.isHidden = true
+        scanNetAnimation?.isHidden = true
+        stopScanAnimation()
+    }
 
 }
